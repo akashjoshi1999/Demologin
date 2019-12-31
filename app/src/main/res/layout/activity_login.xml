@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/gjjindexbb"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_marginTop="51dp"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/logo">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:background="#E4D9D9"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="#E4D9D9"
+        android:layout_marginTop="20dp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="@string/password"/>
+
+    <EditText
+        android:id="@+id/comfirm_password_edit"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="#E4D9D9"
+        android:layout_marginTop="20dp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:hint="@string/confirm_password"
+        tools:ignore="DuplicateIds" />
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#2D43CE"
+        android:text="@string/register"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/already_register"
+            android:paddingTop="1dp"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:paddingTop="1dp"
+            android:paddingLeft="10dp"
+            android:text="@string/login"/>
+    </LinearLayout>
+</LinearLayout>
